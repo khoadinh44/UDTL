@@ -31,9 +31,9 @@ def get_files(root, N):
     for k in range(len(N)):
         for n in tqdm(range(len(dataname[N[k]]))):
             if n==0:
-               path1 =os.path.join(root,datasetname[3], dataname[N[k]][n])
+               path1 =os.path.join(root, dataname[N[k]][n])
             else:
-                path1 = os.path.join(root,datasetname[0], dataname[N[k]][n])
+                path1 = os.path.join(root, dataname[N[k]][n])
             data1, lab1 = data_load(path1,dataname[N[k]][n],label=label[n])
             data += data1
             lab +=lab1
